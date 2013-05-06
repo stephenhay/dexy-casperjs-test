@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Run Report</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <!-- Le styles -->
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/pygments.css" rel="stylesheet">
+        <style>
+            body {
+                padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+            }
+        </style>
+        <link href="css/bootstrap-responsive.css" rel="stylesheet">
+
+        <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <a class="brand" href="#">Dexy Run Report</a>
+                    <div class="nav-collapse collapse">
+                        <ul class="nav">
+                            <li><a href="http://dexy.it">Dexy Website</a></li>
+                        </ul>
+                    </div><!--/.nav-collapse -->
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+
+            <h1>Dexy Run Report</h1>
+
+            <h2>Tree</h2>
+            <p>Click to Expand</p>
+            <div data-toggle="collapse" data-target="#27710942">BundleNode:site</div>
+              <div id="27710942" class="collapse">
+              </div>
+            <div data-toggle="collapse" data-target="#47952570">BundleNode:assets</div>
+              <div id="47952570" class="collapse">
+              </div>
+            <h2>Timing</h2>
+            <p>The total elapsed time for batch 1001 was 0.49 (0.01 minutes).</p>
+
+            <h3>Slowest Tasks</h3>
+            <ul>
+                <li>0.088 - <a href="#index.markdown--jinja--pandoc">index.markdown|jinja|pandoc</a> (generated)</li>
+                <li>0.085 - <a href="#index.markdown--jinja--pandoc">index.markdown|jinja</a> (generated)</li>
+                <li>0.081 - <a href="#login--index.markdown--jinja--pandoc">login/index.markdown|jinja|pandoc</a> (generated)</li>
+                <li>0.052 - <a href="#login--index.markdown--jinja--pandoc">login/index.markdown|jinja</a> (generated)</li>
+                <li>0.000 - <a href="#images--rdw.jpg">images/rdw.jpg</a> ()</li>
+                <li>0.000 - <a href="#base.css">base.css</a> ()</li>
+                <li>0.000 - <a href="#index.markdown--jinja--pandoc">index.markdown</a> ()</li>
+                <li>0.000 - <a href="#login--index.markdown--jinja--pandoc">login/index.markdown</a> ()</li>
+                <li>0.000 - <a href="#styles--base.css">styles/base.css</a> ()</li>
+                </ul>
+
+            <h2>Documents</h2>
+            <hr />
+            <h3 style="padding-top: 60px;" id="login--index.markdown--jinja--pandoc">login/index.markdown|jinja|pandoc &nbsp;&nbsp;&nbsp; <a href="#top">&uarr;</a></h3>
+            <h4>Arguments</h4>
+<pre><code>pandoc:
+&nbsp;&nbsp;&nbsp;&nbsp;args: -t html5
+</code></pre>
+
+
+            <br />
+            <h4>Artifacts</h4>
+            <table style="width: 800px; border: thin solid black; border-collapse: collapse;">
+                <tr><th>Key</th><th>Link</th><th>Elapsed</th><th>Run Type</th><th>Sections</th><th>wd</th></tr>
+                <tr>
+                    <td style="padding-left: 10px; padding-right: 10px; border:thin solid black;">login/index.markdown</td>
+                    <td style="padding-left: 10px; padding-right: 10px; border:thin solid black;"><a href="../../artifacts/37d709660fb7bf279b96625539b31bd7.markdown">artifacts/37d709660fb7bf279b96625539b31bd7.markdown</a></td>
+                    <td style="padding-left: 10px; padding-right: 10px; border:thin solid black; text-align:center;">0.0003</td>
+                    <td style="padding-left: 10px; padding-right: 10px; border:thin solid black;"></td>
+                    <td style="padding-left: 10px; padding-right: 10px; border:thin solid black;">
+                        </td>
+                    <td style="padding-left: 10px; padding-right: 10px; border:thin solid black;">
+                        </td>
+                </tr>
+                <tr>
+                    <td style="padding-left: 10px; padding-right: 10px; border:thin solid black;">login/index.markdown|jinja</td>
+                    <td style="padding-left: 10px; padding-right: 10px; border:thin solid black;"><a href="../../artifacts/9345afe99df45758c4d172a0978a3332.markdown">artifacts/9345afe99df45758c4d172a0978a3332.markdown</a></td>
+                    <td style="padding-left: 10px; padding-right: 10px; border:thin solid black; text-align:center;">0.0523</td>
+                    <td style="padding-left: 10px; padding-right: 10px; border:thin solid black;">generated</td>
+                    <td style="padding-left: 10px; padding-right: 10px; border:thin solid black;">
+                        </td>
+                    <td style="padding-left: 10px; padding-right: 10px; border:thin solid black;">
+                        <a href="../../artifacts/9345afe99df45758c4d172a0978a3332/login">wd</a>
+                        </td>
+                </tr>
+                <tr>
+                    <td style="padding-left: 10px; padding-right: 10px; border:thin solid black;">login/index.markdown|jinja|pandoc</td>
+                    <td style="padding-left: 10px; padding-right: 10px; border:thin solid black;"><a href="../../artifacts/546724b85f2e6765597082b7b8714107.html">artifacts/546724b85f2e6765597082b7b8714107.html</a></td>
+                    <td style="padding-left: 10px; padding-right: 10px; border:thin solid black; text-align:center;">0.0813</td>
+                    <td style="padding-left: 10px; padding-right: 10px; border:thin solid black;">generated</td>
+                    <td style="padding-left: 10px; padding-right: 10px; border:thin solid black;">
+                        </td>
+                    <td style="padding-left: 10px; padding-right: 10px; border:thin solid black;">
+                        <a href="../../artifacts/546724b85f2e6765597082b7b8714107/login">wd</a>
+                        </td>
+                </tr>
+                </table>
+            <br />
+            <br />
+            <h4>Document Log</h4>
+<pre>2013-02-23 23:27:39,263 - login/index.markdown|jinja(|pandoc) - DEBUG - setting up FilterArtifact:login/index.markdown|jinja(|pandoc)
+2013-02-23 23:27:39,264 - login/index.markdown|jinja(|pandoc) - DEBUG - setting up output data of class Generic
+2013-02-23 23:27:39,264 - login/index.markdown|jinja|pandoc - DEBUG - setting up FilterArtifact:login/index.markdown|jinja|pandoc
+2013-02-23 23:27:39,337 - login/index.markdown|jinja|pandoc - DEBUG - setting up output data of class Generic
+2013-02-23 23:27:39,339 - login/index.markdown|jinja(|pandoc) - DEBUG - setting up output data of class Generic
+2013-02-23 23:27:39,340 - login/index.markdown|jinja|pandoc - DEBUG - setting up output data of class Generic
+2013-02-23 23:27:39,520 - login/index.markdown|jinja(|pandoc) - DEBUG - Running FilterArtifact:login/index.markdown|jinja(|pandoc)
+2013-02-23 23:27:39,521 - login/index.markdown|jinja(|pandoc) - DEBUG - Output is not cached under 9345afe99df45758c4d172a0978a3332, running...
+2013-02-23 23:27:39,521 - login/index.markdown|jinja(|pandoc) - DEBUG - setting up wd for login/index.markdown|jinja. exists already: artifacts/9345afe99df45758c4d172a0978a3332/login
+2013-02-23 23:27:39,522 - login/index.markdown|jinja(|pandoc) - DEBUG - setting up jinja FileSystemLoader with dirs ., artifacts/9345afe99df45758c4d172a0978a3332/login, artifacts/9345afe99df45758c4d172a0978a3332
+2013-02-23 23:27:39,522 - login/index.markdown|jinja(|pandoc) - DEBUG - setting up jinja environment
+2013-02-23 23:27:39,522 - login/index.markdown|jinja(|pandoc) - DEBUG - creating jinja2 environment with: undefined: <class 'jinja2.runtime.StrictUndefined'>, loader: <jinja2.loaders.FileSystemLoader object at 0x1026e0e90>
+2013-02-23 23:27:39,523 - login/index.markdown|jinja(|pandoc) - DEBUG - initializing template
+2013-02-23 23:27:39,523 - login/index.markdown|jinja(|pandoc) - DEBUG - Running template plugin PrettyPrintHtml
+2013-02-23 23:27:39,524 - login/index.markdown|jinja(|pandoc) - DEBUG - Running template plugin JavadocToRst
+2013-02-23 23:27:39,524 - login/index.markdown|jinja(|pandoc) - DEBUG - Running template plugin PrettyPrintJson
+2013-02-23 23:27:39,524 - login/index.markdown|jinja(|pandoc) - DEBUG - Running template plugin JinjaFilters
+2013-02-23 23:27:39,524 - login/index.markdown|jinja(|pandoc) - DEBUG - Running template plugin RstCode
+2013-02-23 23:27:39,524 - login/index.markdown|jinja(|pandoc) - DEBUG - Running template plugin PythonDatetime
+2013-02-23 23:27:39,525 - login/index.markdown|jinja(|pandoc) - DEBUG - Running template plugin DexyVersion
+2013-02-23 23:27:39,525 - login/index.markdown|jinja(|pandoc) - DEBUG - Running template plugin SimpleJson
+2013-02-23 23:27:39,525 - login/index.markdown|jinja(|pandoc) - DEBUG - Running template plugin RegularExpressions
+2013-02-23 23:27:39,525 - login/index.markdown|jinja(|pandoc) - DEBUG - Running template plugin PythonBuiltins
+2013-02-23 23:27:39,526 - login/index.markdown|jinja(|pandoc) - DEBUG - Running template plugin PygmentsStylesheet
+2013-02-23 23:27:39,569 - login/index.markdown|jinja(|pandoc) - DEBUG - Running template plugin Subdirectories
+2013-02-23 23:27:39,569 - login/index.markdown|jinja(|pandoc) - DEBUG - Running template plugin Variables
+2013-02-23 23:27:39,569 - login/index.markdown|jinja(|pandoc) - DEBUG - Running template plugin Globals
+2013-02-23 23:27:39,570 - login/index.markdown|jinja(|pandoc) - DEBUG - Running template plugin Inputs
+2013-02-23 23:27:39,570 - login/index.markdown|jinja(|pandoc) - DEBUG - jinja template data keys are DEXY_VERSION, a, abs, all, any, args, bin, bool, bytearray, cal, caldates, calendar, callable, chr, cmp, complex, d, datetime, dict, dir, divmod, enumerate, f, filter, float, format, hasattr, hex, highlight, id, int, isinstance, issubclass, iter, json, len, list, locals, long, map, max, min, month, oct, ord, pow, ppjson, pygments, range, re_match, re_search, reduce, repr, reversed, round, s, set, slice, sorted, str, subdirectories, sum, today, tuple, unicode, w, xrange, year, zip
+2013-02-23 23:27:39,570 - login/index.markdown|jinja(|pandoc) - DEBUG - about to create jinja template
+2013-02-23 23:27:39,572 - login/index.markdown|jinja(|pandoc) - DEBUG - about to process jinja template
+2013-02-23 23:27:39,573 - login/index.markdown|jinja|pandoc - DEBUG - Running FilterArtifact:login/index.markdown|jinja|pandoc
+2013-02-23 23:27:39,573 - login/index.markdown|jinja|pandoc - DEBUG - Output is not cached under 546724b85f2e6765597082b7b8714107, running...
+2013-02-23 23:27:39,574 - login/index.markdown|jinja|pandoc - DEBUG - setting up wd for login/index.markdown|jinja|pandoc. exists already: artifacts/546724b85f2e6765597082b7b8714107/login
+2013-02-23 23:27:39,574 - login/index.markdown|jinja|pandoc - DEBUG - about to run 'pandoc -t html5 index.markdown -o index.html' in 'artifacts/546724b85f2e6765597082b7b8714107/login'
+2013-02-23 23:27:39,652 - login/index.markdown|jinja|pandoc - DEBUG - stdout is ''
+2013-02-23 23:27:39,653 - login/index.markdown|jinja|pandoc - DEBUG - stderr is ''
+</pre>
+            <br />
+            <hr />
+            <h3 style="padding-top: 60px;" id="styles--base.css">styles/base.css &nbsp;&nbsp;&nbsp; <a href="#top">&uarr;</a></h3>
+            
+
+            <br />
+            <h4>Artifacts</h4>
+            <table style="width: 800px; border: thin solid black; border-collapse: collapse;">
+                <tr><th>Key</th><th>Link</th><th>Elapsed</th><th>Run Type</th><th>Sections</th><th>wd</th></tr>
+                <tr>
+                    <td style="padding-left: 10px; padding-right: 10px; border:thin solid black;">styles/base.css</td>
+                    <td style="padding-left: 10px; padding-right: 10px; border:thin solid black;"><a href="../../artifacts/3ab42fd34601acdf6692ec7207c39d7c.css">artifacts/3ab42fd34601acdf6692ec7207c39d7c.css</a></td>
+                    <td style="padding-left: 10px; padding-right: 10px; border:thin solid black; text-align:center;">0.0002</td>
+                    <td style="padding-left: 10px; padding-right: 10px; border:thin solid black;"></td>
+                    <td style="padding-left: 10px; padding-right: 10px; border:thin solid black;">
+                        </td>
+                    <td style="padding-left: 10px; padding-right: 10px; border:thin solid black;">
+                        </td>
+                </tr>
+                </table>
+            <br />
+            <br />
+            <h4>Document Log</h4>
+<pre>2013-02-23 23:27:39,341 - styles/base.css - DEBUG - setting up InitialArtifact:styles/base.css
+2013-02-23 23:27:39,342 - styles/base.css - DEBUG - setting up output data of class Generic
+</pre>
+            <br />
+            <hr />
+            <h3 style="padding-top: 60px;" id="images--rdw.jpg">images/rdw.jpg &nbsp;&nbsp;&nbsp; <a href="#top">&uarr;</a></h3>
+            
+
+            <br />
+            <h4>Artifacts</h4>
+            <table style="width: 800px; border: thin solid black; border-collapse: collapse;">
+                <tr><th>Key</th><th>Link</th><th>Elapsed</th><th>Run Type</th><th>Sections</th><th>wd</th></tr>
+                <tr>
+                    <td style="padding-left: 10px; padding-right: 10px; border:thin solid black;">images/rdw.jpg</td>
+                    <td style="padding-left: 10px; padding-right: 10px; border:thin solid black;"><a href="../../artifacts/d3e0091d12759c97bdd85e9c4759d1f5.jpg">artifacts/d3e0091d12759c97bdd85e9c4759d1f5.jpg</a></td>
+                    <td style="padding-left: 10px; padding-right: 10px; border:thin solid black; text-align:center;">0.0004</td>
+                    <td style="padding-left: 10px; padding-right: 10px; border:thin solid black;"></td>
+                    <td style="padding-left: 10px; padding-right: 10px; border:thin solid black;">
+                        </td>
+                    <td style="padding-left: 10px; padding-right: 10px; border:thin solid black;">
+                        </td>
+                </tr>
+                </table>
+            <br />
+            <br />
+            <h4>Document Log</h4>
+<pre>2013-02-23 23:27:39,342 - images/rdw.jpg - DEBUG - setting up InitialArtifact:images/rdw.jpg
+2013-02-23 23:27:39,343 - images/rdw.jpg - DEBUG - setting up output data of class Generic
+</pre>
+            <br />
+            <hr />
+            <h3 style="padding-top: 60px;" id="index.markdown--jinja--pandoc">index.markdown|jinja|pandoc &nbsp;&nbsp;&nbsp; <a href="#top">&uarr;</a></h3>
+            <h4>Arguments</h4>
+<pre><code>pandoc:
+&nbsp;&nbsp;&nbsp;&nbsp;args: -t html5
+</code></pre>
+
+
+            <br />
+            <h4>Artifacts</h4>
+            <table style="width: 800px; border: thin solid black; border-collapse: collapse;">
+                <tr><th>Key</th><th>Link</th><th>Elapsed</th><th>Run Type</th><th>Sections</th><th>wd</th></tr>
+                <tr>
+                    <td style="padding-left: 10px; padding-right: 10px; border:thin solid black;">index.markdown</td>
+                    <td style="padding-left: 10px; padding-right: 10px; border:thin solid black;"><a href="../../artifacts/71630da0a86be8214d517412b05b511b.markdown">artifacts/71630da0a86be8214d517412b05b511b.markdown</a></td>
+                    <td style="padding-left: 10px; padding-right: 10px; border:thin solid black; text-align:center;">0.0003</td>
+                    <td style="padding-left: 10px; padding-right: 10px; border:thin solid black;"></td>
+                    <td style="padding-left: 10px; padding-right: 10px; border:thin solid black;">
+                        </td>
+                    <td style="padding-left: 10px; padding-right: 10px; border:thin solid black;">
+                        </td>
+                </tr>
+                <tr>
+                    <td style="padding-left: 10px; padding-right: 10px; border:thin solid black;">index.markdown|jinja</td>
+                    <td style="padding-left: 10px; padding-right: 10px; border:thin solid black;"><a href="../../artifacts/77f560ee405ee71dba8a212f2176dbce.markdown">artifacts/77f560ee405ee71dba8a212f2176dbce.markdown</a></td>
+                    <td style="padding-left: 10px; padding-right: 10px; border:thin solid black; text-align:center;">0.0848</td>
+                    <td style="padding-left: 10px; padding-right: 10px; border:thin solid black;">generated</td>
+                    <td style="padding-left: 10px; padding-right: 10px; border:thin solid black;">
+                        </td>
+                    <td style="padding-left: 10px; padding-right: 10px; border:thin solid black;">
+                        <a href="../../artifacts/77f560ee405ee71dba8a212f2176dbce/">wd</a>
+                        </td>
+                </tr>
+                <tr>
+                    <td style="padding-left: 10px; padding-right: 10px; border:thin solid black;">index.markdown|jinja|pandoc</td>
+                    <td style="padding-left: 10px; padding-right: 10px; border:thin solid black;"><a href="../../artifacts/3ee653be5f21203556745dd279ef54d8.html">artifacts/3ee653be5f21203556745dd279ef54d8.html</a></td>
+                    <td style="padding-left: 10px; padding-right: 10px; border:thin solid black; text-align:center;">0.0884</td>
+                    <td style="padding-left: 10px; padding-right: 10px; border:thin solid black;">generated</td>
+                    <td style="padding-left: 10px; padding-right: 10px; border:thin solid black;">
+                        </td>
+                    <td style="padding-left: 10px; padding-right: 10px; border:thin solid black;">
+                        <a href="../../artifacts/3ee653be5f21203556745dd279ef54d8/">wd</a>
+                        </td>
+                </tr>
+                </table>
+            <br />
+            <br />
+            <h4>Document Log</h4>
+<pre>2013-02-23 23:27:39,182 - index.markdown|jinja(|pandoc) - DEBUG - setting up FilterArtifact:index.markdown|jinja(|pandoc)
+2013-02-23 23:27:39,183 - index.markdown|jinja(|pandoc) - DEBUG - setting up output data of class Generic
+2013-02-23 23:27:39,183 - index.markdown|jinja|pandoc - DEBUG - setting up FilterArtifact:index.markdown|jinja|pandoc
+2013-02-23 23:27:39,261 - index.markdown|jinja|pandoc - DEBUG - setting up output data of class Generic
+2013-02-23 23:27:39,338 - index.markdown|jinja(|pandoc) - DEBUG - setting up output data of class Generic
+2013-02-23 23:27:39,339 - index.markdown|jinja|pandoc - DEBUG - setting up output data of class Generic
+2013-02-23 23:27:39,345 - index.markdown|jinja(|pandoc) - DEBUG - Running FilterArtifact:index.markdown|jinja(|pandoc)
+2013-02-23 23:27:39,345 - index.markdown|jinja(|pandoc) - DEBUG - Output is not cached under 77f560ee405ee71dba8a212f2176dbce, running...
+2013-02-23 23:27:39,345 - index.markdown|jinja(|pandoc) - DEBUG - setting up wd for index.markdown|jinja. exists already: artifacts/77f560ee405ee71dba8a212f2176dbce/
+2013-02-23 23:27:39,346 - index.markdown|jinja(|pandoc) - DEBUG - setting up jinja FileSystemLoader with dirs ., artifacts/77f560ee405ee71dba8a212f2176dbce/, artifacts/77f560ee405ee71dba8a212f2176dbce
+2013-02-23 23:27:39,347 - index.markdown|jinja(|pandoc) - DEBUG - setting up jinja environment
+2013-02-23 23:27:39,347 - index.markdown|jinja(|pandoc) - DEBUG - creating jinja2 environment with: undefined: <class 'jinja2.runtime.StrictUndefined'>, loader: <jinja2.loaders.FileSystemLoader object at 0x1027e9210>
+2013-02-23 23:27:39,348 - index.markdown|jinja(|pandoc) - DEBUG - initializing template
+2013-02-23 23:27:39,348 - index.markdown|jinja(|pandoc) - DEBUG - Running template plugin PrettyPrintHtml
+2013-02-23 23:27:39,348 - index.markdown|jinja(|pandoc) - DEBUG - Running template plugin JavadocToRst
+2013-02-23 23:27:39,348 - index.markdown|jinja(|pandoc) - DEBUG - Running template plugin PrettyPrintJson
+2013-02-23 23:27:39,348 - index.markdown|jinja(|pandoc) - DEBUG - Running template plugin JinjaFilters
+2013-02-23 23:27:39,349 - index.markdown|jinja(|pandoc) - DEBUG - Running template plugin RstCode
+2013-02-23 23:27:39,349 - index.markdown|jinja(|pandoc) - DEBUG - Running template plugin PythonDatetime
+2013-02-23 23:27:39,349 - index.markdown|jinja(|pandoc) - DEBUG - Running template plugin DexyVersion
+2013-02-23 23:27:39,349 - index.markdown|jinja(|pandoc) - DEBUG - Running template plugin SimpleJson
+2013-02-23 23:27:39,350 - index.markdown|jinja(|pandoc) - DEBUG - Running template plugin RegularExpressions
+2013-02-23 23:27:39,350 - index.markdown|jinja(|pandoc) - DEBUG - Running template plugin PythonBuiltins
+2013-02-23 23:27:39,350 - index.markdown|jinja(|pandoc) - DEBUG - Running template plugin PygmentsStylesheet
+2013-02-23 23:27:39,421 - index.markdown|jinja(|pandoc) - DEBUG - Running template plugin Subdirectories
+2013-02-23 23:27:39,421 - index.markdown|jinja(|pandoc) - DEBUG - Running template plugin Variables
+2013-02-23 23:27:39,422 - index.markdown|jinja(|pandoc) - DEBUG - Running template plugin Globals
+2013-02-23 23:27:39,422 - index.markdown|jinja(|pandoc) - DEBUG - Running template plugin Inputs
+2013-02-23 23:27:39,422 - index.markdown|jinja(|pandoc) - DEBUG - jinja template data keys are DEXY_VERSION, a, abs, all, any, args, bin, bool, bytearray, cal, caldates, calendar, callable, chr, cmp, complex, d, datetime, dict, dir, divmod, enumerate, f, filter, float, format, hasattr, hex, highlight, id, int, isinstance, issubclass, iter, json, len, list, locals, long, map, max, min, month, oct, ord, pow, ppjson, pygments, range, re_match, re_search, reduce, repr, reversed, round, s, set, slice, sorted, str, subdirectories, sum, today, tuple, unicode, w, xrange, year, zip
+2013-02-23 23:27:39,422 - index.markdown|jinja(|pandoc) - DEBUG - about to create jinja template
+2013-02-23 23:27:39,429 - index.markdown|jinja(|pandoc) - DEBUG - about to process jinja template
+2013-02-23 23:27:39,430 - index.markdown|jinja|pandoc - DEBUG - Running FilterArtifact:index.markdown|jinja|pandoc
+2013-02-23 23:27:39,430 - index.markdown|jinja|pandoc - DEBUG - Output is not cached under 3ee653be5f21203556745dd279ef54d8, running...
+2013-02-23 23:27:39,431 - index.markdown|jinja|pandoc - DEBUG - setting up wd for index.markdown|jinja|pandoc. exists already: artifacts/3ee653be5f21203556745dd279ef54d8/
+2013-02-23 23:27:39,431 - index.markdown|jinja|pandoc - DEBUG - about to run 'pandoc -t html5 index.markdown -o index.html' in 'artifacts/3ee653be5f21203556745dd279ef54d8/'
+2013-02-23 23:27:39,516 - index.markdown|jinja|pandoc - DEBUG - stdout is ''
+2013-02-23 23:27:39,517 - index.markdown|jinja|pandoc - DEBUG - stderr is ''
+</pre>
+            <br />
+            <hr />
+            <h3 style="padding-top: 60px;" id="base.css">base.css &nbsp;&nbsp;&nbsp; <a href="#top">&uarr;</a></h3>
+            
+
+            <br />
+            <h4>Artifacts</h4>
+            <table style="width: 800px; border: thin solid black; border-collapse: collapse;">
+                <tr><th>Key</th><th>Link</th><th>Elapsed</th><th>Run Type</th><th>Sections</th><th>wd</th></tr>
+                <tr>
+                    <td style="padding-left: 10px; padding-right: 10px; border:thin solid black;">base.css</td>
+                    <td style="padding-left: 10px; padding-right: 10px; border:thin solid black;"><a href="../../artifacts/9461924cc10246daaeeb29b25563e477.css">artifacts/9461924cc10246daaeeb29b25563e477.css</a></td>
+                    <td style="padding-left: 10px; padding-right: 10px; border:thin solid black; text-align:center;">0.0003</td>
+                    <td style="padding-left: 10px; padding-right: 10px; border:thin solid black;"></td>
+                    <td style="padding-left: 10px; padding-right: 10px; border:thin solid black;">
+                        </td>
+                    <td style="padding-left: 10px; padding-right: 10px; border:thin solid black;">
+                        </td>
+                </tr>
+                </table>
+            <br />
+            <br />
+            <h4>Document Log</h4>
+<pre>2013-02-23 23:27:39,340 - base.css - DEBUG - setting up InitialArtifact:base.css
+2013-02-23 23:27:39,341 - base.css - DEBUG - setting up output data of class Generic
+</pre>
+            <br />
+            
+
+        </div> <!-- /container -->
+
+        <!-- Le javascript
+        ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="http://code.jquery.com/jquery-latest.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+
+    </body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Design Guidelines</title>
+        <link rel="stylesheet" href="styles/guidelines.css" media="screen">
+        <link href='http://fonts.googleapis.com/css?family=BenchNine:700' rel='stylesheet' type='text/css'>
+        <style>
+            .hll { background-color: #ffffcc }
+.c { color: #888888 } /* Comment */
+.err { color: #a61717; background-color: #e3d2d2 } /* Error */
+.k { color: #008800; font-weight: bold } /* Keyword */
+.cm { color: #888888 } /* Comment.Multiline */
+.cp { color: #cc0000; font-weight: bold } /* Comment.Preproc */
+.c1 { color: #888888 } /* Comment.Single */
+.cs { color: #cc0000; font-weight: bold; background-color: #fff0f0 } /* Comment.Special */
+.gd { color: #000000; background-color: #ffdddd } /* Generic.Deleted */
+.ge { font-style: italic } /* Generic.Emph */
+.gr { color: #aa0000 } /* Generic.Error */
+.gh { color: #333333 } /* Generic.Heading */
+.gi { color: #000000; background-color: #ddffdd } /* Generic.Inserted */
+.go { color: #888888 } /* Generic.Output */
+.gp { color: #555555 } /* Generic.Prompt */
+.gs { font-weight: bold } /* Generic.Strong */
+.gu { color: #666666 } /* Generic.Subheading */
+.gt { color: #aa0000 } /* Generic.Traceback */
+.kc { color: #008800; font-weight: bold } /* Keyword.Constant */
+.kd { color: #008800; font-weight: bold } /* Keyword.Declaration */
+.kn { color: #008800; font-weight: bold } /* Keyword.Namespace */
+.kp { color: #008800 } /* Keyword.Pseudo */
+.kr { color: #008800; font-weight: bold } /* Keyword.Reserved */
+.kt { color: #888888; font-weight: bold } /* Keyword.Type */
+.m { color: #0000DD; font-weight: bold } /* Literal.Number */
+.s { color: #dd2200; background-color: #fff0f0 } /* Literal.String */
+.na { color: #336699 } /* Name.Attribute */
+.nb { color: #003388 } /* Name.Builtin */
+.nc { color: #bb0066; font-weight: bold } /* Name.Class */
+.no { color: #003366; font-weight: bold } /* Name.Constant */
+.nd { color: #555555 } /* Name.Decorator */
+.ne { color: #bb0066; font-weight: bold } /* Name.Exception */
+.nf { color: #0066bb; font-weight: bold } /* Name.Function */
+.nl { color: #336699; font-style: italic } /* Name.Label */
+.nn { color: #bb0066; font-weight: bold } /* Name.Namespace */
+.py { color: #336699; font-weight: bold } /* Name.Property */
+.nt { color: #bb0066; font-weight: bold } /* Name.Tag */
+.nv { color: #336699 } /* Name.Variable */
+.ow { color: #008800 } /* Operator.Word */
+.w { color: #bbbbbb } /* Text.Whitespace */
+.mf { color: #0000DD; font-weight: bold } /* Literal.Number.Float */
+.mh { color: #0000DD; font-weight: bold } /* Literal.Number.Hex */
+.mi { color: #0000DD; font-weight: bold } /* Literal.Number.Integer */
+.mo { color: #0000DD; font-weight: bold } /* Literal.Number.Oct */
+.sb { color: #dd2200; background-color: #fff0f0 } /* Literal.String.Backtick */
+.sc { color: #dd2200; background-color: #fff0f0 } /* Literal.String.Char */
+.sd { color: #dd2200; background-color: #fff0f0 } /* Literal.String.Doc */
+.s2 { color: #dd2200; background-color: #fff0f0 } /* Literal.String.Double */
+.se { color: #0044dd; background-color: #fff0f0 } /* Literal.String.Escape */
+.sh { color: #dd2200; background-color: #fff0f0 } /* Literal.String.Heredoc */
+.si { color: #3333bb; background-color: #fff0f0 } /* Literal.String.Interpol */
+.sx { color: #22bb22; background-color: #f0fff0 } /* Literal.String.Other */
+.sr { color: #008800; background-color: #fff0ff } /* Literal.String.Regex */
+.s1 { color: #dd2200; background-color: #fff0f0 } /* Literal.String.Single */
+.ss { color: #aa6600; background-color: #fff0f0 } /* Literal.String.Symbol */
+.bp { color: #003388 } /* Name.Builtin.Pseudo */
+.vc { color: #336699 } /* Name.Variable.Class */
+.vg { color: #dd7700 } /* Name.Variable.Global */
+.vi { color: #3333bb } /* Name.Variable.Instance */
+.il { color: #0000DD; font-weight: bold } /* Literal.Number.Integer.Long */
+        </style>
+        <style media="screen">
+            body {
+                font: 100%/1.5 sans-serif;
+                background: #ededed;
+                padding: 0 10%;
+            }
+            h1,h2 {
+                font-family: DIN-Bold;
+                color: steelblue;
+            }
+            h1 {
+                border-bottom: 1px solid steelblue;
+                font-size:2em;
+            }
+            p img {
+                display: inline-block;
+                width: 27%;
+                vertical-align: top;
+                background: white;
+                padding: 1em;
+                margin-right: 1em;
+                border: 1px solid gray;
+                box-shadow: 1px 1px 3px gray;
+            }
+        </style>
+
+    </head>
+    <body>
+
+<h1 id="responsive-design-workflow-book-site-design-guidelines">Responsive Design Workflow book site: design guidelines</h1>
+<p>This page contains the design standards used in creating the book site. These guidelines can be used to create subsequent pages or other web projects related to the book.</p>
+<h2 id="background">Background</h2>
+<p>The site has been designed to be a companion to the book, visually as well as in content. The basic color palette, typography and other aspects of the book's design language have been ported to the web, while attempting to remain consistent with the look and feel of the book. The biggest difference between the book site and the design of the book itself is in regards to layout: the web site uses a responsive approach, in which the layout may change depending on the size of the user's screen. Content remains consistent regardless of device.</p>
+<h2 id="responsiveness-and-breakpoints">Responsiveness and breakpoints</h2>
+<p>There are three major breakpoints for the page layout: at <code>400px</code>, <code>600px</code> and <code>900px</code>. The following examples show how the website looks at these three viewport widths:</p>
+<p><img src="images/400.png" /> <img src="images/600.png" /> <img src="images/900.png" /></p>
+<h2 id="the-main-heading">The main heading</h2>
+<p>The main heading of the page is also the title of the book, and has a different appearance than normal headings:</p>
+<div class="figure">
+<img src="images/h1.png" />
+</div>
+<p><div class="highlight"><pre><a name="mockup--styles--base.css-idio.html-18"></a><span class="nt">h1</span> <span class="p">{</span>
+<a name="mockup--styles--base.css-idio.html-19"></a>    <span class="k">text-transform</span><span class="o">:</span> <span class="k">uppercase</span><span class="p">;</span>
+<a name="mockup--styles--base.css-idio.html-20"></a>    <span class="k">background-color</span><span class="o">:</span> <span class="m">#45565c</span><span class="p">;</span>
+<a name="mockup--styles--base.css-idio.html-21"></a>    <span class="k">color</span><span class="o">:</span> <span class="m">#fee29d</span><span class="p">;</span>
+<a name="mockup--styles--base.css-idio.html-22"></a>    <span class="k">margin-top</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+<a name="mockup--styles--base.css-idio.html-23"></a>    <span class="k">font-size</span><span class="o">:</span> <span class="m">2em</span><span class="p">;</span>
+<a name="mockup--styles--base.css-idio.html-24"></a>    <span class="k">padding</span><span class="o">:</span> <span class="m">.5em</span> <span class="m">.5em</span> <span class="m">1em</span><span class="p">;</span>
+<a name="mockup--styles--base.css-idio.html-25"></a>    <span class="n">box</span><span class="o">-</span><span class="n">shadow</span><span class="o">:</span> <span class="m">0px</span> <span class="m">10px</span> <span class="m">50px</span> <span class="nb">silver</span><span class="p">;</span>
+<a name="mockup--styles--base.css-idio.html-26"></a><span class="p">}</span>
+</pre></div>
+</p>
+
+    </body>
+</html>

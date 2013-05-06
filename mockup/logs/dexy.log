@@ -1,0 +1,178 @@
+2013-02-23 23:27:39,154 - dexy - DEBUG - dexy has config:
+2013-02-23 23:27:39,154 - dexy - DEBUG -   artifacts_dir: artifacts
+2013-02-23 23:27:39,154 - dexy - DEBUG -   config_file: dexy.conf
+2013-02-23 23:27:39,155 - dexy - DEBUG -   danger: False
+2013-02-23 23:27:39,155 - dexy - DEBUG -   db_alias: sqlite3
+2013-02-23 23:27:39,155 - dexy - DEBUG -   db_file: dexy.sqlite3
+2013-02-23 23:27:39,155 - dexy - DEBUG -   disable_tests: False
+2013-02-23 23:27:39,155 - dexy - DEBUG -   dont_use_cache: False
+2013-02-23 23:27:39,155 - dexy - DEBUG -   dry_run: False
+2013-02-23 23:27:39,155 - dexy - DEBUG -   encoding: utf-8
+2013-02-23 23:27:39,155 - dexy - DEBUG -   exclude: .git, .svn, tmp, cache
+2013-02-23 23:27:39,155 - dexy - DEBUG -   exclude_also: 
+2013-02-23 23:27:39,155 - dexy - DEBUG -   full: False
+2013-02-23 23:27:39,156 - dexy - DEBUG -   globals: 
+2013-02-23 23:27:39,156 - dexy - DEBUG -   hashfunction: md5
+2013-02-23 23:27:39,156 - dexy - DEBUG -   ignore_nonzero_exit: False
+2013-02-23 23:27:39,156 - dexy - DEBUG -   log_dir: logs
+2013-02-23 23:27:39,156 - dexy - DEBUG -   log_file: dexy.log
+2013-02-23 23:27:39,156 - dexy - DEBUG -   log_format: %(asctime)s - %(name)s - %(levelname)s - %(message)s
+2013-02-23 23:27:39,156 - dexy - DEBUG -   log_level: DEBUG
+2013-02-23 23:27:39,156 - dexy - DEBUG -   plugins: 
+2013-02-23 23:27:39,156 - dexy - DEBUG -   profile: False
+2013-02-23 23:27:39,157 - dexy - DEBUG -   recurse: True
+2013-02-23 23:27:39,157 - dexy - DEBUG -   reports: ws run
+2013-02-23 23:27:39,157 - dexy - DEBUG -   siblings: False
+2013-02-23 23:27:39,157 - dexy - DEBUG -   silent: False
+2013-02-23 23:27:39,157 - dexy - DEBUG -   target: False
+2013-02-23 23:27:39,157 - dexy - DEBUG -   uselocals: False
+2013-02-23 23:27:39,158 - dexy - DEBUG -   skipping directory './artifacts' because it matches exclude 'artifacts'
+2013-02-23 23:27:39,158 - dexy - DEBUG -   skipping directory './logs' because it matches exclude 'logs'
+2013-02-23 23:27:39,158 - dexy - DEBUG -   skipping directory './output-site' because it matches exclude 'output-site'
+2013-02-23 23:27:39,158 - dexy - DEBUG - loading config from './dexy.yaml'
+2013-02-23 23:27:39,161 - dexy - DEBUG - treating site as a bundle name, not prepending directory .
+2013-02-23 23:27:39,162 - dexy - DEBUG - adding dependency of 'pattern:*.markdown|jinja|pandoc' on 'bundle:site'
+2013-02-23 23:27:39,162 - dexy - DEBUG - adding task info for 'pattern:*.markdown|jinja|pandoc'
+2013-02-23 23:27:39,162 - dexy - DEBUG - treating assets as a bundle name, not prepending directory .
+2013-02-23 23:27:39,162 - dexy - DEBUG - adding dependency of 'pattern:*.css' on 'bundle:assets'
+2013-02-23 23:27:39,162 - dexy - DEBUG - adding dependency of 'pattern:*.js' on 'bundle:assets'
+2013-02-23 23:27:39,163 - dexy - DEBUG - adding dependency of 'pattern:*.png' on 'bundle:assets'
+2013-02-23 23:27:39,163 - dexy - DEBUG - adding dependency of 'pattern:*.jpg' on 'bundle:assets'
+2013-02-23 23:27:39,164 - dexy - DEBUG - AST completed:
+2013-02-23 23:27:39,165 - dexy - DEBUG - tree:
+  bundle:site
+  bundle:assets
+lookup table:
+    pattern:*.jpg: {'inputs': []}
+    pattern:*.js: {'inputs': []}
+    bundle:site: {'inputs': ['pattern:*.markdown|jinja|pandoc']}
+    bundle:assets: {'inputs': ['pattern:*.css', 'pattern:*.js', 'pattern:*.png', 'pattern:*.jpg']}
+    pattern:*.css: {'inputs': []}
+    pattern:*.png: {'inputs': []}
+    pattern:*.markdown|jinja|pandoc: {'inputs': [], 'pandoc': {'args': '-t html5'}}
+2013-02-23 23:27:39,165 - dexy - DEBUG - creating task 'pattern:*.markdown|jinja|pandoc' with inputs '()' with original kwargs '{'wrapper': <dexy.wrapper.Wrapper object at 0x1026eb4d0>, 'pandoc': {'args': '-t html5'}}'
+2013-02-23 23:27:39,165 - dexy - DEBUG - creating task 'bundle:site' with inputs '(PatternNode:*.markdown|jinja|pandoc,)' with original kwargs '{'wrapper': <dexy.wrapper.Wrapper object at 0x1026eb4d0>}'
+2013-02-23 23:27:39,166 - dexy - DEBUG - creating task 'pattern:*.css' with inputs '()' with original kwargs '{'wrapper': <dexy.wrapper.Wrapper object at 0x1026eb4d0>}'
+2013-02-23 23:27:39,166 - dexy - DEBUG - creating task 'pattern:*.js' with inputs '()' with original kwargs '{'wrapper': <dexy.wrapper.Wrapper object at 0x1026eb4d0>}'
+2013-02-23 23:27:39,166 - dexy - DEBUG - creating task 'pattern:*.png' with inputs '()' with original kwargs '{'wrapper': <dexy.wrapper.Wrapper object at 0x1026eb4d0>}'
+2013-02-23 23:27:39,166 - dexy - DEBUG - creating task 'pattern:*.jpg' with inputs '()' with original kwargs '{'wrapper': <dexy.wrapper.Wrapper object at 0x1026eb4d0>}'
+2013-02-23 23:27:39,166 - dexy - DEBUG - creating task 'bundle:assets' with inputs '(PatternNode:*.css, PatternNode:*.js, PatternNode:*.png, PatternNode:*.jpg)' with original kwargs '{'wrapper': <dexy.wrapper.Wrapper object at 0x1026eb4d0>}'
+2013-02-23 23:27:39,167 - *.markdown|jinja|pandoc - DEBUG - creating child of patterndoc *.markdown|jinja|pandoc: index.markdown|jinja|pandoc
+2013-02-23 23:27:39,167 - *.markdown|jinja|pandoc - DEBUG - with args {'wrapper': <dexy.wrapper.Wrapper object at 0x1026eb4d0>, 'pandoc': {'args': '-t html5'}}
+2013-02-23 23:27:39,174 - *.markdown|jinja|pandoc - DEBUG - creating child of patterndoc *.markdown|jinja|pandoc: login/index.markdown|jinja|pandoc
+2013-02-23 23:27:39,174 - *.markdown|jinja|pandoc - DEBUG - with args {'wrapper': <dexy.wrapper.Wrapper object at 0x1026eb4d0>, 'pandoc': {'args': '-t html5'}}
+2013-02-23 23:27:39,176 - *.css - DEBUG - creating child of patterndoc *.css: base.css
+2013-02-23 23:27:39,177 - *.css - DEBUG - with args {'wrapper': <dexy.wrapper.Wrapper object at 0x1026eb4d0>}
+2013-02-23 23:27:39,178 - *.css - DEBUG - creating child of patterndoc *.css: styles/base.css
+2013-02-23 23:27:39,178 - *.css - DEBUG - with args {'wrapper': <dexy.wrapper.Wrapper object at 0x1026eb4d0>}
+2013-02-23 23:27:39,181 - *.jpg - DEBUG - creating child of patterndoc *.jpg: images/rdw.jpg
+2013-02-23 23:27:39,181 - *.jpg - DEBUG - with args {'wrapper': <dexy.wrapper.Wrapper object at 0x1026eb4d0>}
+2013-02-23 23:27:39,182 - index.markdown(|jinja|pandoc) - DEBUG - setting up InitialArtifact:index.markdown(|jinja|pandoc)
+2013-02-23 23:27:39,182 - index.markdown(|jinja|pandoc) - DEBUG - setting up output data of class Generic
+2013-02-23 23:27:39,182 - index.markdown|jinja(|pandoc) - DEBUG - setting up FilterArtifact:index.markdown|jinja(|pandoc)
+2013-02-23 23:27:39,183 - index.markdown|jinja(|pandoc) - DEBUG - setting up output data of class Generic
+2013-02-23 23:27:39,183 - index.markdown|jinja|pandoc - DEBUG - setting up FilterArtifact:index.markdown|jinja|pandoc
+2013-02-23 23:27:39,261 - index.markdown|jinja|pandoc - DEBUG - setting up output data of class Generic
+2013-02-23 23:27:39,263 - login/index.markdown(|jinja|pandoc) - DEBUG - setting up InitialArtifact:login/index.markdown(|jinja|pandoc)
+2013-02-23 23:27:39,263 - login/index.markdown(|jinja|pandoc) - DEBUG - setting up output data of class Generic
+2013-02-23 23:27:39,263 - login/index.markdown|jinja(|pandoc) - DEBUG - setting up FilterArtifact:login/index.markdown|jinja(|pandoc)
+2013-02-23 23:27:39,264 - login/index.markdown|jinja(|pandoc) - DEBUG - setting up output data of class Generic
+2013-02-23 23:27:39,264 - login/index.markdown|jinja|pandoc - DEBUG - setting up FilterArtifact:login/index.markdown|jinja|pandoc
+2013-02-23 23:27:39,337 - login/index.markdown|jinja|pandoc - DEBUG - setting up output data of class Generic
+2013-02-23 23:27:39,338 - index.markdown|jinja(|pandoc) - DEBUG - setting up output data of class Generic
+2013-02-23 23:27:39,339 - index.markdown|jinja|pandoc - DEBUG - setting up output data of class Generic
+2013-02-23 23:27:39,339 - login/index.markdown|jinja(|pandoc) - DEBUG - setting up output data of class Generic
+2013-02-23 23:27:39,340 - login/index.markdown|jinja|pandoc - DEBUG - setting up output data of class Generic
+2013-02-23 23:27:39,340 - base.css - DEBUG - setting up InitialArtifact:base.css
+2013-02-23 23:27:39,341 - base.css - DEBUG - setting up output data of class Generic
+2013-02-23 23:27:39,341 - styles/base.css - DEBUG - setting up InitialArtifact:styles/base.css
+2013-02-23 23:27:39,342 - styles/base.css - DEBUG - setting up output data of class Generic
+2013-02-23 23:27:39,342 - images/rdw.jpg - DEBUG - setting up InitialArtifact:images/rdw.jpg
+2013-02-23 23:27:39,343 - images/rdw.jpg - DEBUG - setting up output data of class Generic
+2013-02-23 23:27:39,345 - index.markdown|jinja(|pandoc) - DEBUG - Running FilterArtifact:index.markdown|jinja(|pandoc)
+2013-02-23 23:27:39,345 - index.markdown|jinja(|pandoc) - DEBUG - Output is not cached under 77f560ee405ee71dba8a212f2176dbce, running...
+2013-02-23 23:27:39,345 - index.markdown|jinja(|pandoc) - DEBUG - setting up wd for index.markdown|jinja. exists already: artifacts/77f560ee405ee71dba8a212f2176dbce/
+2013-02-23 23:27:39,346 - index.markdown|jinja(|pandoc) - DEBUG - setting up jinja FileSystemLoader with dirs ., artifacts/77f560ee405ee71dba8a212f2176dbce/, artifacts/77f560ee405ee71dba8a212f2176dbce
+2013-02-23 23:27:39,347 - index.markdown|jinja(|pandoc) - DEBUG - setting up jinja environment
+2013-02-23 23:27:39,347 - index.markdown|jinja(|pandoc) - DEBUG - creating jinja2 environment with: undefined: <class 'jinja2.runtime.StrictUndefined'>, loader: <jinja2.loaders.FileSystemLoader object at 0x1027e9210>
+2013-02-23 23:27:39,348 - index.markdown|jinja(|pandoc) - DEBUG - initializing template
+2013-02-23 23:27:39,348 - index.markdown|jinja(|pandoc) - DEBUG - Running template plugin PrettyPrintHtml
+2013-02-23 23:27:39,348 - index.markdown|jinja(|pandoc) - DEBUG - Running template plugin JavadocToRst
+2013-02-23 23:27:39,348 - index.markdown|jinja(|pandoc) - DEBUG - Running template plugin PrettyPrintJson
+2013-02-23 23:27:39,348 - index.markdown|jinja(|pandoc) - DEBUG - Running template plugin JinjaFilters
+2013-02-23 23:27:39,349 - index.markdown|jinja(|pandoc) - DEBUG - Running template plugin RstCode
+2013-02-23 23:27:39,349 - index.markdown|jinja(|pandoc) - DEBUG - Running template plugin PythonDatetime
+2013-02-23 23:27:39,349 - index.markdown|jinja(|pandoc) - DEBUG - Running template plugin DexyVersion
+2013-02-23 23:27:39,349 - index.markdown|jinja(|pandoc) - DEBUG - Running template plugin SimpleJson
+2013-02-23 23:27:39,350 - index.markdown|jinja(|pandoc) - DEBUG - Running template plugin RegularExpressions
+2013-02-23 23:27:39,350 - index.markdown|jinja(|pandoc) - DEBUG - Running template plugin PythonBuiltins
+2013-02-23 23:27:39,350 - index.markdown|jinja(|pandoc) - DEBUG - Running template plugin PygmentsStylesheet
+2013-02-23 23:27:39,421 - index.markdown|jinja(|pandoc) - DEBUG - Running template plugin Subdirectories
+2013-02-23 23:27:39,421 - index.markdown|jinja(|pandoc) - DEBUG - Running template plugin Variables
+2013-02-23 23:27:39,422 - index.markdown|jinja(|pandoc) - DEBUG - Running template plugin Globals
+2013-02-23 23:27:39,422 - index.markdown|jinja(|pandoc) - DEBUG - Running template plugin Inputs
+2013-02-23 23:27:39,422 - index.markdown|jinja(|pandoc) - DEBUG - jinja template data keys are DEXY_VERSION, a, abs, all, any, args, bin, bool, bytearray, cal, caldates, calendar, callable, chr, cmp, complex, d, datetime, dict, dir, divmod, enumerate, f, filter, float, format, hasattr, hex, highlight, id, int, isinstance, issubclass, iter, json, len, list, locals, long, map, max, min, month, oct, ord, pow, ppjson, pygments, range, re_match, re_search, reduce, repr, reversed, round, s, set, slice, sorted, str, subdirectories, sum, today, tuple, unicode, w, xrange, year, zip
+2013-02-23 23:27:39,422 - index.markdown|jinja(|pandoc) - DEBUG - about to create jinja template
+2013-02-23 23:27:39,429 - index.markdown|jinja(|pandoc) - DEBUG - about to process jinja template
+2013-02-23 23:27:39,430 - index.markdown|jinja|pandoc - DEBUG - Running FilterArtifact:index.markdown|jinja|pandoc
+2013-02-23 23:27:39,430 - index.markdown|jinja|pandoc - DEBUG - Output is not cached under 3ee653be5f21203556745dd279ef54d8, running...
+2013-02-23 23:27:39,431 - index.markdown|jinja|pandoc - DEBUG - setting up wd for index.markdown|jinja|pandoc. exists already: artifacts/3ee653be5f21203556745dd279ef54d8/
+2013-02-23 23:27:39,431 - index.markdown|jinja|pandoc - DEBUG - about to run 'pandoc -t html5 index.markdown -o index.html' in 'artifacts/3ee653be5f21203556745dd279ef54d8/'
+2013-02-23 23:27:39,516 - index.markdown|jinja|pandoc - DEBUG - stdout is ''
+2013-02-23 23:27:39,517 - index.markdown|jinja|pandoc - DEBUG - stderr is ''
+2013-02-23 23:27:39,520 - login/index.markdown|jinja(|pandoc) - DEBUG - Running FilterArtifact:login/index.markdown|jinja(|pandoc)
+2013-02-23 23:27:39,521 - login/index.markdown|jinja(|pandoc) - DEBUG - Output is not cached under 9345afe99df45758c4d172a0978a3332, running...
+2013-02-23 23:27:39,521 - login/index.markdown|jinja(|pandoc) - DEBUG - setting up wd for login/index.markdown|jinja. exists already: artifacts/9345afe99df45758c4d172a0978a3332/login
+2013-02-23 23:27:39,522 - login/index.markdown|jinja(|pandoc) - DEBUG - setting up jinja FileSystemLoader with dirs ., artifacts/9345afe99df45758c4d172a0978a3332/login, artifacts/9345afe99df45758c4d172a0978a3332
+2013-02-23 23:27:39,522 - login/index.markdown|jinja(|pandoc) - DEBUG - setting up jinja environment
+2013-02-23 23:27:39,522 - login/index.markdown|jinja(|pandoc) - DEBUG - creating jinja2 environment with: undefined: <class 'jinja2.runtime.StrictUndefined'>, loader: <jinja2.loaders.FileSystemLoader object at 0x1026e0e90>
+2013-02-23 23:27:39,523 - login/index.markdown|jinja(|pandoc) - DEBUG - initializing template
+2013-02-23 23:27:39,523 - login/index.markdown|jinja(|pandoc) - DEBUG - Running template plugin PrettyPrintHtml
+2013-02-23 23:27:39,524 - login/index.markdown|jinja(|pandoc) - DEBUG - Running template plugin JavadocToRst
+2013-02-23 23:27:39,524 - login/index.markdown|jinja(|pandoc) - DEBUG - Running template plugin PrettyPrintJson
+2013-02-23 23:27:39,524 - login/index.markdown|jinja(|pandoc) - DEBUG - Running template plugin JinjaFilters
+2013-02-23 23:27:39,524 - login/index.markdown|jinja(|pandoc) - DEBUG - Running template plugin RstCode
+2013-02-23 23:27:39,524 - login/index.markdown|jinja(|pandoc) - DEBUG - Running template plugin PythonDatetime
+2013-02-23 23:27:39,525 - login/index.markdown|jinja(|pandoc) - DEBUG - Running template plugin DexyVersion
+2013-02-23 23:27:39,525 - login/index.markdown|jinja(|pandoc) - DEBUG - Running template plugin SimpleJson
+2013-02-23 23:27:39,525 - login/index.markdown|jinja(|pandoc) - DEBUG - Running template plugin RegularExpressions
+2013-02-23 23:27:39,525 - login/index.markdown|jinja(|pandoc) - DEBUG - Running template plugin PythonBuiltins
+2013-02-23 23:27:39,526 - login/index.markdown|jinja(|pandoc) - DEBUG - Running template plugin PygmentsStylesheet
+2013-02-23 23:27:39,569 - login/index.markdown|jinja(|pandoc) - DEBUG - Running template plugin Subdirectories
+2013-02-23 23:27:39,569 - login/index.markdown|jinja(|pandoc) - DEBUG - Running template plugin Variables
+2013-02-23 23:27:39,569 - login/index.markdown|jinja(|pandoc) - DEBUG - Running template plugin Globals
+2013-02-23 23:27:39,570 - login/index.markdown|jinja(|pandoc) - DEBUG - Running template plugin Inputs
+2013-02-23 23:27:39,570 - login/index.markdown|jinja(|pandoc) - DEBUG - jinja template data keys are DEXY_VERSION, a, abs, all, any, args, bin, bool, bytearray, cal, caldates, calendar, callable, chr, cmp, complex, d, datetime, dict, dir, divmod, enumerate, f, filter, float, format, hasattr, hex, highlight, id, int, isinstance, issubclass, iter, json, len, list, locals, long, map, max, min, month, oct, ord, pow, ppjson, pygments, range, re_match, re_search, reduce, repr, reversed, round, s, set, slice, sorted, str, subdirectories, sum, today, tuple, unicode, w, xrange, year, zip
+2013-02-23 23:27:39,570 - login/index.markdown|jinja(|pandoc) - DEBUG - about to create jinja template
+2013-02-23 23:27:39,572 - login/index.markdown|jinja(|pandoc) - DEBUG - about to process jinja template
+2013-02-23 23:27:39,573 - login/index.markdown|jinja|pandoc - DEBUG - Running FilterArtifact:login/index.markdown|jinja|pandoc
+2013-02-23 23:27:39,573 - login/index.markdown|jinja|pandoc - DEBUG - Output is not cached under 546724b85f2e6765597082b7b8714107, running...
+2013-02-23 23:27:39,574 - login/index.markdown|jinja|pandoc - DEBUG - setting up wd for login/index.markdown|jinja|pandoc. exists already: artifacts/546724b85f2e6765597082b7b8714107/login
+2013-02-23 23:27:39,574 - login/index.markdown|jinja|pandoc - DEBUG - about to run 'pandoc -t html5 index.markdown -o index.html' in 'artifacts/546724b85f2e6765597082b7b8714107/login'
+2013-02-23 23:27:39,652 - login/index.markdown|jinja|pandoc - DEBUG - stdout is ''
+2013-02-23 23:27:39,653 - login/index.markdown|jinja|pandoc - DEBUG - stderr is ''
+2013-02-23 23:27:39,658 - dexy - DEBUG - committing db changes
+2013-02-23 23:27:39,662 - dexy - DEBUG - generating user-specified reports 'ws run'
+2013-02-23 23:27:39,662 - dexy - DEBUG - initializing reporter WebsiteReporter for alias ws
+2013-02-23 23:27:39,662 - dexy - DEBUG - initializing reporter RunReporter for alias run
+2013-02-23 23:27:39,663 - dexy - DEBUG - running reporter ws
+2013-02-23 23:27:39,664 - report:ws - DEBUG - In nav_directories
+2013-02-23 23:27:39,665 - report:ws - DEBUG - adding doc login/index.markdown|jinja|pandoc
+2013-02-23 23:27:39,665 - report:ws - DEBUG - doc styles/base.css is not index page, skipping
+2013-02-23 23:27:39,665 - report:ws - DEBUG - doc images/rdw.jpg is not index page, skipping
+2013-02-23 23:27:39,665 - report:ws - DEBUG - doc base.css is not index page, skipping
+2013-02-23 23:27:39,667 - report:ws - DEBUG - processing doc Doc:login/index.markdown|jinja|pandoc
+2013-02-23 23:27:39,667 - report:ws - DEBUG -   using template _template.html for login/index.markdown|jinja|pandoc
+2013-02-23 23:27:39,668 - report:ws - DEBUG -   loading template at _template.html
+2013-02-23 23:27:39,673 - report:ws - DEBUG -   writing to output-site/login/index.html
+2013-02-23 23:27:39,698 - report:ws - DEBUG - processing doc Doc:styles/base.css
+2013-02-23 23:27:39,698 - report:ws - DEBUG -   writing styles/base.css to output-site/styles/base.css
+2013-02-23 23:27:39,699 - report:ws - DEBUG - processing doc Doc:images/rdw.jpg
+2013-02-23 23:27:39,699 - report:ws - DEBUG -   writing images/rdw.jpg to output-site/images/rdw.jpg
+2013-02-23 23:27:39,700 - report:ws - DEBUG - processing doc Doc:index.markdown|jinja|pandoc
+2013-02-23 23:27:39,700 - report:ws - DEBUG -   using template _template.html for index.markdown|jinja|pandoc
+2013-02-23 23:27:39,700 - report:ws - DEBUG -   loading template at _template.html
+2013-02-23 23:27:39,702 - report:ws - DEBUG -   writing to output-site/index.html
+2013-02-23 23:27:39,725 - report:ws - DEBUG - processing doc Doc:base.css
+2013-02-23 23:27:39,725 - report:ws - DEBUG -   writing base.css to output-site/base.css
+2013-02-23 23:27:39,725 - dexy - DEBUG - running reporter run

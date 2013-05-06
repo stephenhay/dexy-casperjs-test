@@ -1,0 +1,10 @@
+guidelines.markdown|pandoc|hd|ft|jinja:
+    - partials
+    - screenshots
+    - sources
+partials:
+    - _*.html
+screenshots:
+    - screenshots.js|casperjs
+sources:
+    - mockup/styles/base.css|idio
